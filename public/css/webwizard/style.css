@@ -1,5 +1,17 @@
+.outside.rad-theme {
+    background-color: #28658f;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+}
+.outside .white-label-logo {
+    max-width: 160px;
+}
 .global-header {
     background-color: #2b3643;
+}
+.global-header .white-label-logo {
+    max-height: 19px;
+    max-width: 112px;
+    height: 19px;
 }
 .nav-main {
     background-color: #37414f;
