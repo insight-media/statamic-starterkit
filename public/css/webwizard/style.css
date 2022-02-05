@@ -18,6 +18,16 @@
 .nav-main li a {
     color: #b4bcc8;
 }
+.nav-main li a i {
+    color: #708096;
+}
+.nav-main li.current>a {
+    color: #ffffff;
+}
+.nav-main li.current>a i {
+    background-color: #627085;
+    color: #e1e6ed;
+}
 .global-search {
     border: 0;
     background-color: #4a5869;
@@ -34,4 +44,7 @@
 }
 .head-link button:hover {
     color: white !important;
+}
+.icon-user-initials {
+    background-color: #2fadeb;
 }
