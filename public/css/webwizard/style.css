@@ -1,0 +1,37 @@
+.global-header {
+    background-color: #2b3643;
+}
+.nav-main {
+    background-color: #37414f;
+    border-right: 0;
+}
+.nav-main h6 {
+    color: #708096;
+}
+.nav-toggle {
+    color: #697585;
+}
+.nav-toggle:hover {
+    color: #dadcdd;
+    background-color: #4a5868;
+}
+.nav-main li a {
+    color: #b4bcc8;
+}
+.global-search {
+    border: 0;
+    background-color: #4a5869;
+}
+.global-search .search-input {
+    background-color: transparent;
+    color: white;
+}
+.global-search span {
+    border-color: #8493a1;
+}
+.head-link button {
+    color: #79869a !important;
+}
+.head-link button:hover {
+    color: white !important;
+}
