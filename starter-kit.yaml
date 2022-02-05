@@ -14,7 +14,7 @@ export_paths:
   - public/assets/.meta/insightmedia-profile.png.yaml
   - public/assets/insightmedia-profile.png
   - resources/views/layout.antlers.html
-  - resources/lang
+  - resources/lang/nl
   - resources/users
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
