@@ -10,8 +10,8 @@
     "scripts": {
         "post-install-cmd": [
             "php artisan vendor:publish --tag=statamic-recaptcha",
-            "php artisan vendor:publish --provider=\"AryehRaber\Logbook\LogbookServiceProvider\"",
-            "php artisan vendor:publish --provider=\"Cnj\Seotamic\ServiceProvider\" --tag=config"
+            "php artisan vendor:publish --provider='AryehRaber\Logbook\LogbookServiceProvider'",
+            "php artisan vendor:publish --provider='Cnj\Seotamic\ServiceProvider' --tag=config"
         ]
     }
 }
