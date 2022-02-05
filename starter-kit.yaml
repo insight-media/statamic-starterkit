@@ -8,11 +8,13 @@ export_paths:
   - Vagrantfile
   - Homestead.yaml
   - public/images
+  - public/css/webwizard
   - users/dries@insight-media.be.yaml
   - public/assets/.meta/insightmedia-profile.png.yaml
   - public/assets/insightmedia-profile.png
   - resources/views/layout.antlers.html
   - resources/lang
+  - resources/users
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
   aryehraber/statamic-logbook: ^2.0
