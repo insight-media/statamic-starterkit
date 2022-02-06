@@ -8,6 +8,8 @@ export_paths:
   - aliases
   - Vagrantfile
   - Homestead.yaml
+  - .autogit.yml
+  - workflow.md
   - public/images
   - public/css/webwizard
   - users/dries@insight-media.be.yaml
