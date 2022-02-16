@@ -7,6 +7,15 @@ This starterkit contains:
 Config files for default Insight Media (dutch) projects.
 
 ## Assets
+Default media assets.
+
+## Globals
+Meta globals.
+
+## Tracking codes
+Default Google Analytics tracking code.
+
+## Public assets
 For rebranding the control panel.
 
 ## Resources
@@ -30,14 +39,17 @@ Automatically adds a SEO tab to all your collection entries where you can fine t
 **[HTML Minify for Statamic V3](https://github.com/octoper/statamic-html-minify)** <br>
 This addon can minify the html for all the pages inside your Statamic Website.
 
-**[Statamic Bard Text Align](https://github.com/OptimoApps/statamic-bard-text-align)** <br>
+**[Bard Text Align](https://github.com/OptimoApps/statamic-bard-text-align)** <br>
 Statamic bard extension to align text.
 
 **[Tracking Code Manager](https://github.com/simonridley/tracking-code-manager)** <br>
 For managing your tracking/analytics scripts, pixels etc.
 
-**[Statamic Admin Log](https://github.com/webographen/statamic-admin-log)** <br>
+**[Admin Log](https://github.com/webographen/statamic-admin-log)** <br>
 Logs all actions by your users in the control panel.
+
+**[External Link](https://github.com/jonassiewertsen/statamic-external-link)** <br>
+This is a simple Fieldtype for Statamic 3, created to handle links.
 
 
 <br>
