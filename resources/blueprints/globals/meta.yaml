@@ -1,0 +1,58 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: app_name
+        field:
+          input_type: text
+          character_limit: 20
+          antlers: false
+          display: 'Web app naam'
+          type: text
+          icon: text
+          instructions: 'Deze naam wordt getoond onder het icoon, wanneer de site als web app wordt geïnstalleerd.'
+          listable: hidden
+          instructions_position: above
+      -
+        handle: tile_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Windows tegel kleur'
+          type: color
+          icon: color
+          instructions: 'Achtergrondkleur van een Windows Tile.'
+          listable: hidden
+          instructions_position: above
+      -
+        handle: theme_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Thema kleur'
+          type: color
+          icon: color
+          instructions: 'Thema kleur wanneer de website als webapplicatie wordt geïnstalleerd.'
+          listable: hidden
+          instructions_position: above
+      -
+        handle: safari_tab_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Safari vastgepinned tab kleur'
+          type: color
+          icon: color
+          instructions: 'Achtergrondkleur van een vastgepinned tab in Safari.'
+          listable: hidden
+          instructions_position: above
