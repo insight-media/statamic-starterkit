@@ -3,6 +3,10 @@ export_paths:
   - config/statamic/cp.php
   - config/statamic/sites.php
   - config/statamic/editions.php
+  - content/assets/assets.yaml
+  - content/globals/meta.yaml
+  - content/seotamic_nl_BE.yaml
+  - content/tracking-codes.yaml
   - .env
   - after.sh
   - aliases
@@ -13,12 +17,15 @@ export_paths:
   - public/images
   - public/css/webwizard
   - users/dries@insight-media.be.yaml
-  - public/assets/.meta/insightmedia-profile.png.yaml
-  - public/assets/insightmedia-profile.png
+  - storage/app/public/.meta/insightmedia-profile.png.yaml
+  - storage/app/public/insightmedia-profile.png
   - resources/views/layout.antlers.html
   - resources/lang/nl
   - resources/lang/nl.json
   - resources/users
+  - resources/blueprints/user.yaml
+  - resources/blueprints/globals/meta.yaml
+  - resources/blueprints/assets/assets.yaml
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
   aryehraber/statamic-logbook: ^2.0

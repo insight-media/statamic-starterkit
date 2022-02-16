@@ -1,0 +1,8 @@
+title: Asset
+fields:
+  -
+    handle: alt
+    field:
+      display: 'Alternatieve Tekst'
+      type: text
+      instructions: 'Omschrijving van de afbeelding'
