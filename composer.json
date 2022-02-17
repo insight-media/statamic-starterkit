@@ -12,7 +12,9 @@
             "php artisan vendor:publish --tag=statamic-recaptcha",
             "php artisan vendor:publish --provider=AryehRaber\\Logbook\\LogbookServiceProvider",
             "php artisan vendor:publish --provider=Cnj\\Seotamic\\ServiceProvider --tag=config",
-            "php artisan vendor:publish --provider=Jonassiewertsen\\ExternalLink\\ServiceProvider --force",
+            "php artisan vendor:publish --provider=Jonassiewertsen\\ExternalLink\\ServiceProvider --force"
+        ],
+        "post-root-package-install": [
             "php artisan insightmedia:configure:starterkit"
         ]
     }
