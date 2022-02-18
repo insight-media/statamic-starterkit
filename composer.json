@@ -6,14 +6,5 @@
             "name": "Insight Media Starterkit",
             "description": "A Statamic starterkit for Insight Media projects."
         }
-    },
-    "scripts": {
-        "post-create-project-cmd": [
-            "php artisan vendor:publish --tag=statamic-recaptcha",
-            "php artisan vendor:publish --provider=AryehRaber\\Logbook\\LogbookServiceProvider",
-            "php artisan vendor:publish --provider=Cnj\\Seotamic\\ServiceProvider --tag=config",
-            "php artisan vendor:publish --provider=Jonassiewertsen\\ExternalLink\\ServiceProvider --force",
-            "php artisan insightmedia:configure:starterkit"
-        ]
     }
 }
