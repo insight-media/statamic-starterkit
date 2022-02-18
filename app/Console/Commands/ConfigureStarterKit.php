@@ -38,6 +38,8 @@ class ConfigureStarterKit extends Command
     public function handle()
     {
 
+        $this->info("Configuring Insight Media Starter Kit");
+
         if (config('app.env') == "local")
         {
             $this->rename(base_path('public'), base_path('www'));
