@@ -34,7 +34,7 @@ hooks:
     php artisan cache:clear
     php artisan config:clear
     php artisan view:clear
-    php -r "file_exists('.env') || copy('.env.example', '.env');"
+    php -r "file_exists('.env') || copy('.env.$1', '.env');"
     php artisan config:cache
     php artisan route:cache
     exit 0
