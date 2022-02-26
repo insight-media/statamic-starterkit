@@ -51,6 +51,9 @@ Logs all actions by your users in the control panel.
 **[External Link](https://github.com/jonassiewertsen/statamic-external-link)** <br>
 This is a simple Fieldtype for Statamic 3, created to handle links.
 
+**[Statamic sync](https://github.com/insight-media/statamic-sync)** <br>
+A console command to keep your local Statamic project in sync with the production version.
+
 
 <br>
 <img src="https://www.insight-media.be/images/logo.svg" height="50">

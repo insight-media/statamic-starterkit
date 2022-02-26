@@ -37,4 +37,5 @@ dependencies:
   simonridley/tracking-code-manager: dev-master
   webographen/statamic-admin-log: ^1.0
 dependencies_dev:
-  laravel/homestead: ^13.2
+  insight-media/statamic-sync: ^1.0
+  laravel/homestead: ^13
