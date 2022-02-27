@@ -113,6 +113,8 @@ class ConfigureStarterKit extends Command
         Artisan::call('vendor:publish', [
             '--provider' => 'Jonassiewertsen\ExternalLink\ServiceProvider'
         ]);
+
+        $this->info("Published vendor files");
     }
 
 }
