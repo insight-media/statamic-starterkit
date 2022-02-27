@@ -1,4 +1,6 @@
 export_paths:
+  - tailwind.config.js
+  - webpack.mix.js
   - config/app.php
   - config/services.php
   - config/statamic/cp.php
@@ -31,8 +33,8 @@ export_paths:
   - app/Providers/AppServiceProvider.php
   - app/Console/Commands/ConfigureStarterKit.php
 dependencies_dev:
-  laravel/homestead: ^13.2
   insight-media/statamic-sync: ^1.0
+  laravel/homestead: ^13.2
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
   aryehraber/statamic-logbook: ^2.0
