@@ -40,7 +40,6 @@ dependencies:
   anakadote/statamic-recaptcha: ^1.0
   aryehraber/statamic-logbook: ^2.0
   cnj/seotamic: ^2.0
-  octoper/statamic-html-minify: ^0.0.5
   optimoapps/statamic-bard-text-align: ^1.0
   simonridley/tracking-code-manager: dev-master
   webographen/statamic-admin-log: ^1.0

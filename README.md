@@ -36,9 +36,6 @@ Statamic v2 Addon to view log files in the CP.
 **[Seotamic - Statamic SEO Addon](https://github.com/cnj-digital/seotamic)** <br>
 Automatically adds a SEO tab to all your collection entries where you can fine tune SEO for every entry.
 
-**[HTML Minify for Statamic V3](https://github.com/octoper/statamic-html-minify)** <br>
-This addon can minify the html for all the pages inside your Statamic Website.
-
 **[Bard Text Align](https://github.com/OptimoApps/statamic-bard-text-align)** <br>
 Statamic bard extension to align text.
 
