@@ -7,17 +7,15 @@ keys:
     - ~/.ssh/id_rsa
 folders:
     -
-        map: 'C:\Projects\statamic-starterkit-dummy'
+        map: 'E:\Projects\statamic-starterkit-dummy'
         to: /home/vagrant/code
 sites:
     -
         map: statamic.local
-        to: /home/vagrant/code/public
-databases:
-    - homestead
+        to: /home/vagrant/code/www
 features:
     -
-        mysql: true
+        mysql: false
     -
         mariadb: false
     -
@@ -26,8 +24,5 @@ features:
         ohmyzsh: false
     -
         webdriver: false
-services:
-    -
-        enabled: [mysql]
 name: statamic-starterkit-dummy
 hostname: statamic-starterkit-dummy
