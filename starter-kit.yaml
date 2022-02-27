@@ -1,5 +1,6 @@
 export_paths:
   - config/app.php
+  - config/services.php
   - config/statamic/cp.php
   - config/statamic/sites.php
   - config/statamic/editions.php
@@ -20,6 +21,7 @@ export_paths:
   - storage/app/public/.meta/insightmedia-profile.png.yaml
   - storage/app/public/insightmedia-profile.png
   - resources/views/layout.antlers.html
+  - resources/views/partials
   - resources/lang/nl
   - resources/lang/nl.json
   - resources/users
@@ -28,6 +30,9 @@ export_paths:
   - resources/blueprints/assets/assets.yaml
   - app/Providers/AppServiceProvider.php
   - app/Console/Commands/ConfigureStarterKit.php
+dependencies_dev:
+  laravel/homestead: ^13.2
+  insight-media/statamic-sync: ^1.0
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
   aryehraber/statamic-logbook: ^2.0
@@ -36,6 +41,3 @@ dependencies:
   optimoapps/statamic-bard-text-align: ^1.0
   simonridley/tracking-code-manager: dev-master
   webographen/statamic-admin-log: ^1.0
-dependencies_dev:
-  insight-media/statamic-sync: ^1.0
-  laravel/homestead: ^13
