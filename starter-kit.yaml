@@ -24,6 +24,7 @@ export_paths:
   - storage/app/public/insightmedia-profile.png
   - resources/views/layout.antlers.html
   - resources/views/partials
+  - resources/views/errors
   - resources/lang/nl
   - resources/lang/nl.json
   - resources/users
