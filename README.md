@@ -33,7 +33,7 @@ Statamic v2 Addon to protect forms using Google's reCAPTCHA service.
 **[Logbook](https://github.com/aryehraber/statamic-logbook)** <br>
 Statamic v2 Addon to view log files in the CP.
 
-**[Seotamic - Statamic SEO Addon](https://github.com/cnj-digital/seotamic)** <br>
+**[Seotamic - Statamic SEO Addon](https://github.com/insight-media/seotamic)** <br>
 Automatically adds a SEO tab to all your collection entries where you can fine tune SEO for every entry.
 
 **[Bard Text Align](https://github.com/OptimoApps/statamic-bard-text-align)** <br>
