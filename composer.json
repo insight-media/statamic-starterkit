@@ -6,11 +6,5 @@
             "name": "Insight Media Starterkit",
             "description": "A Statamic starterkit for Insight Media projects."
         }
-    },
-    "repositories": {
-        "insight-media": {
-            "type": "vcs",
-            "url": "git@github.com:insight-media/seotamic.git"
-        }
     }
 }
