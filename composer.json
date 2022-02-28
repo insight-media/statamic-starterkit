@@ -10,7 +10,7 @@
     "repositories": {
         "insight-media": {
             "type": "vcs",
-            "url": "https://github.com/insight-media/seotamic.git"
+            "url": "git@github.com:insight-media/seotamic.git"
         }
     }
 }
