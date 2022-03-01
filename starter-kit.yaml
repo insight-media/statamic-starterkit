@@ -8,6 +8,7 @@ export_paths:
   - config/statamic/editions.php
   - content/assets/assets.yaml
   - content/globals/meta.yaml
+  - content/collections/news.yaml
   - content/seotamic_nl_BE.yaml
   - content/tracking-codes.yaml
   - .env
@@ -31,6 +32,7 @@ export_paths:
   - resources/blueprints/user.yaml
   - resources/blueprints/globals/meta.yaml
   - resources/blueprints/assets/assets.yaml
+  - resources/blueprints/collections/news/news.yaml
   - app/Providers/AppServiceProvider.php
   - app/Console/Commands/ConfigureStarterKit.php
 dependencies_dev:

@@ -1,0 +1,11 @@
+title: Nieuwsberichten
+template: newsitem-page
+layout: layout
+mount: ef13d4a8-1b35-4c8c-9d42-e7bd3e9d8fed
+revisions: false
+route: '{mount}/{slug}'
+date: true
+sort_dir: desc
+date_behavior:
+  past: public
+  future: private

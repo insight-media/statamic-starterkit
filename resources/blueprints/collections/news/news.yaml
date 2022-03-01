@@ -1,0 +1,364 @@
+title: Nieuwsbericht
+sections:
+  content:
+    display: Inhoud
+    fields:
+      -
+        handle: type
+        field:
+          options:
+            simple: 'Kort bericht zonder detailpagina'
+            detailed: 'Bericht met link naar detailpagina'
+            referer: 'Bericht met link naar externe site'
+          multiple: false
+          clearable: false
+          searchable: false
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          default: simple
+          display: 'Type bericht'
+          type: select
+          icon: select
+          instructions: 'Wordt het nieuwsbericht volledig in het overzicht getoond, of is er link naar een aparte pagina met meer inhoud.'
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          display: Titel
+          instructions_position: above
+          listable: hidden
+          input_type: text
+          antlers: false
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+          display: 'Korte inhoud'
+          instructions_position: above
+          listable: hidden
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          validate:
+            - required
+      -
+        handle: uitgebreide_inhoud
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: 'Uitgebreide inhoud'
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          if:
+            type: 'equals detailed'
+      -
+        handle: external_url
+        field:
+          placeholder: 'Bv. https://www.google.be'
+          input_type: url
+          antlers: false
+          display: 'Externe URL'
+          type: text
+          icon: text
+          instructions: 'URL van website of pagina waar naar wordt verwezen.'
+          listable: hidden
+          instructions_position: above
+          validate:
+            - url
+          if:
+            type: 'equals referer'
+  pictures:
+    display: Afbeeldingen
+    fields:
+      -
+        handle: pictures
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Afbeeldingen
+          type: assets
+          icon: assets
+          instructions: 'De eerste afbeelding wordt gebruikt in het overzicht.'
+          listable: hidden
+          instructions_position: above
+  publication:
+    display: Publicatieinstellingen
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+          width: 50
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+          width: 50
+          display: Publicatiedatum
+          instructions_position: above
+          listable: hidden
+          mode: single
+          time_enabled: false
+          time_required: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+  SEO:
+    display: SEO
+    fields:
+      -
+        handle: seotamic_meta
+        field:
+          display: Meta
+          listable: hidden
+          type: section
+          localizable: false
+      -
+        handle: seotamic_title
+        field:
+          options:
+            title: Titel
+            custom: Aangepast
+          clearable: false
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          localizable: false
+          listable: hidden
+          default: title
+          display: Titel
+          instructions: 'Deze titel kan door zoekmachines gebruikt worden als titel van het zoekresultaat.'
+      -
+        handle: seotamic_custom_title
+        field:
+          input_type: text
+          character_limit: 100
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Aangepaste Meta Titel'
+          if:
+            seotamic_title: 'equals custom'
+      -
+        handle: seotamic_title_prepend
+        field:
+          type: toggle
+          instructions: 'Algemene titel voorvoegsel tonen, die is ingesteld in Algemene SEO-instellingen'
+          localizable: false
+          default: true
+          width: 50
+          listable: hidden
+          display: 'Algemene titel voorvoegsel'
+      -
+        handle: seotamic_title_append
+        field:
+          type: toggle
+          localizable: false
+          instructions: 'Algemene titel achtervoegsel tonen, die is ingesteld in Algemene SEO-instellingen'
+          width: 50
+          listable: hidden
+          default: true
+          display: 'Algemene titel achtervoegsel'
+      -
+        handle: seotamic_meta_description
+        field:
+          options:
+            empty: Empty
+            general: General
+            custom: Custom
+          clearable: false
+          default: empty
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          instructions: 'Kan gebruikt worden als tekst onder de titel van het zoekresultaat in zoekmachines. Indien leeg, kiezen zoekmachines zelf een beschrijving.'
+          localizable: false
+          listable: hidden
+          display: 'Meta omschrijving'
+      -
+        handle: seotamic_custom_meta_description
+        field:
+          input_type: text
+          character_limit: 200
+          type: textarea
+          localizable: false
+          listable: hidden
+          display: 'Aangepaste Meta omschrijving'
+          if:
+            seotamic_meta_description: 'equals custom'
+      -
+        handle: seotamic_canonical
+        field:
+          type: link
+          instructions: 'Standaard wordt de pagina URL gebruikt'
+          localizable: false
+          listable: hidden
+          display: Canonical
+      -
+        handle: seotamic_social
+        field:
+          type: section
+          localizable: false
+          listable: hidden
+          display: Social
+      -
+        handle: seotamic_open_graph_title
+        field:
+          options:
+            title: Titel
+            general: Algemeen
+            custom: Aangepast
+          clearable: false
+          default: title
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          localizable: false
+          listable: hidden
+          display: 'Open Graph titel'
+      -
+        handle: seotamic_custom_open_graph_title
+        field:
+          input_type: text
+          character_limit: 100
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Aangepaste Open Graph titel'
+          if:
+            seotamic_open_graph_title: 'equals custom'
+      -
+        handle: seotamic_open_graph_description
+        field:
+          options:
+            meta: 'Meta omschrijving'
+            general: 'Algemene omschrijving'
+            custom: Aangepast
+          clearable: false
+          default: general
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          localizable: false
+          listable: hidden
+          display: 'Open Graph omschrijving'
+      -
+        handle: seotamic_custom_open_graph_description
+        field:
+          input_type: text
+          character_limit: 200
+          type: textarea
+          localizable: false
+          listable: hidden
+          display: 'Aangepaste Open Graph omschrijving'
+          if:
+            seotamic_open_graph_description: 'equals custom'
+      -
+        handle: seotamic_twitter_title
+        field:
+          options:
+            title: Titel
+            general: Algemeen
+            custom: Aangepast
+          clearable: false
+          default: title
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          localizable: false
+          listable: hidden
+          display: 'Twitter titel'
+      -
+        handle: seotamic_custom_twitter_title
+        field:
+          input_type: text
+          character_limit: 100
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Aangepaste Twitter titel'
+          if:
+            seotamic_twitter_title: 'equals custom'
+      -
+        handle: seotamic_twitter_description
+        field:
+          options:
+            meta: 'Meta omschrijving'
+            general: 'Algemene omschrijving'
+            custom: Aangepast
+          clearable: false
+          default: general
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          localizable: false
+          listable: hidden
+          display: 'Twitter omschrijving'
+      -
+        handle: seotamic_custom_twitter_description
+        field:
+          input_type: text
+          character_limit: 200
+          type: textarea
+          localizable: false
+          listable: hidden
+          display: 'Aangepaste Twitter omschrijving'
+          if:
+            seotamic_twitter_description: 'equals custom'
+      -
+        handle: seotamic_image
+        field:
+          container: assets
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          instructions: 'Indien leeg, wordt de algemene afbeelding gebruikt. Gebruik afbeeldingen met een 1.91:1 ratio en minimum aanbevolen afmetingen van 1200x630 voor optimale scherpe weergave op alle schermen. De afbeelding wordt herschaald naar 1200px breedte.'
+          localizable: false
+          listable: hidden
+          display: Afbeelding
