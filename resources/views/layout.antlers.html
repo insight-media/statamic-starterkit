@@ -31,7 +31,9 @@
     </head>
     <body>
         {{ tracking_code_manager:body }}
+        {{ partial:header }}
         {{ template_content }}
+        {{ partial:footer }}
         <script src="{{ mix src='/js/site.js' }}"></script>
         {{ yield:page-specific-scripts }}
         {{ tracking_code_manager:footer }}
