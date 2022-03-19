@@ -4,6 +4,8 @@ alias ...="cd ../.."
 alias h='cd ~'
 alias c='clear'
 alias art=artisan
+alias please='php please'
+alias plz='please'
 
 alias codecept='vendor/bin/codecept'
 alias phpspec='vendor/bin/phpspec'
@@ -50,7 +52,7 @@ function p() {
        vendor/bin/phpunit "$@"
     fi
  }
- 
+
  function pf() {
     if [ -f vendor/bin/pest ]; then
        vendor/bin/pest --filter "$@"
