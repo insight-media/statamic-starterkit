@@ -5,6 +5,7 @@
 * File > Rename project
 * Edit .env
 * Edit Homestead.yaml
+* Edit webpack.mix.js (browsersync proxy)
 * Add DNS mapping to host file
 * Run following commands on the host machine:
   * yarn install
