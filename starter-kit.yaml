@@ -1,4 +1,6 @@
 export_paths:
+  - package.json
+  - .prettierrc
   - tailwind.config.js
   - webpack.mix.js
   - config/app.php
