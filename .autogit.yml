@@ -51,6 +51,8 @@ hooks:
   symlink_before: |
     exit 0
   symlink_after: |
+    rm ~/checkout/$1/current/www/storage
+    php artisan storage:link
     exit 0
 
   # CLEANUP: Cleanup old releases, two most recent releases remaining
