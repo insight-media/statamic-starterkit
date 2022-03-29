@@ -17,6 +17,7 @@ Default Google Analytics tracking code.
 
 ## Public assets
 For rebranding the control panel.
+Optimised htaccess file.
 
 ## Resources
 Default layout view.<br>

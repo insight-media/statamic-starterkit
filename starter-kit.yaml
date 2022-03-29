@@ -20,6 +20,7 @@ export_paths:
   - Homestead.yaml
   - .autogit.yml
   - workflow.md
+  - public/.htaccess
   - public/images
   - public/css/webwizard
   - users/dries@insight-media.be.yaml
