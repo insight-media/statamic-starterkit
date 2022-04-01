@@ -43,7 +43,6 @@ dependencies_dev:
   laravel/homestead: ^13.2
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
-  insight-media/statamic-logbook: ^2.0
   insight-media/seotamic: ^2.0
   optimoapps/statamic-bard-text-align: ^1.0
   simonridley/tracking-code-manager: dev-master
