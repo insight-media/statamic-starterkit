@@ -31,7 +31,7 @@ Default super admin user for Insight Media.
 **[Recaptcha](https://github.com/aryehraber/statamic-recaptcha)** <br>
 Statamic v2 Addon to protect forms using Google's reCAPTCHA service.
 
-**[Logbook](https://github.com/aryehraber/statamic-logbook)** <br>
+**[Logbook](https://github.com/insight-media/statamic-logbook)** <br>
 Statamic v2 Addon to view log files in the CP.
 
 **[Seotamic - Statamic SEO Addon](https://github.com/insight-media/seotamic)** <br>
