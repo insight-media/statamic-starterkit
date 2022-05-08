@@ -6,6 +6,7 @@ alias c='clear'
 alias art=artisan
 alias please='php please'
 alias plz='please'
+alias dep='php vendor/bin/deployer.phar'
 
 alias codecept='vendor/bin/codecept'
 alias phpspec='vendor/bin/phpspec'
