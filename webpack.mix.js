@@ -2,7 +2,7 @@ const mix = require('laravel-mix');
 
 const paths = {
     'SOURCE': './resources/',
-    'DESTINATION': './www/'
+    'DESTINATION': './public/'
 }
 
 /*
@@ -29,7 +29,7 @@ mix.postCss(paths.SOURCE + 'css/tailwind.css', paths.DESTINATION + 'css/site.css
 mix.browserSync({
     files: [
         'app/**/*',
-        'www/**/*',
+        'public/**/*',
         'resources/views/**/*',
         'resources/lang/**/*',
         'routes/**/*'
