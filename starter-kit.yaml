@@ -16,9 +16,9 @@ export_paths:
   - .env
   - after.sh
   - aliases
+  - deploy.php
   - Vagrantfile
   - Homestead.yaml
-  - .autogit.yml
   - workflow.md
   - public/.htaccess
   - public/images
@@ -36,10 +36,9 @@ export_paths:
   - resources/blueprints/globals/meta.yaml
   - resources/blueprints/assets/assets.yaml
   - resources/blueprints/collections/news/news.yaml
-  - app/Providers/AppServiceProvider.php
   - app/Console/Commands/ConfigureStarterKit.php
 dependencies_dev:
-  insight-media/statamic-sync: ^2.0
+  deployer/deployer: *
   laravel/homestead: ^13.2
 dependencies:
   anakadote/statamic-recaptcha: ^1.0

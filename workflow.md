@@ -15,6 +15,14 @@
 
 ## Deployment
 
-* Copy public storage files to remote:
-  scp -r storage/* username@sub.webhosting.be:~/checkout/master/shared/storage
+* Edit deploy.php
+* Push to origin
 
+### Upload .env.*branch* to host
+dep upload-env
+
+### Deploy
+dep deploy
+
+### Download public storage folder
+dep download-public-storage
