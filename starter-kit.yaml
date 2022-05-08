@@ -38,7 +38,7 @@ export_paths:
   - resources/blueprints/collections/news/news.yaml
   - app/Console/Commands/ConfigureStarterKit.php
 dependencies_dev:
-  deployer/deployer
+  deployer/deployer: ^7.0
   laravel/homestead: ^13.2
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
