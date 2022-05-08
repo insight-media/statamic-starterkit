@@ -1,5 +1,11 @@
 ## Insight Media starterkit
 ### A Statamic starterkit for Insight Media projects.
+
+## Installation
+Run:<br>
+*statamic new project-name insight-media/statamic-starterkit*
+
+
 <br>
 This starterkit contains:
 
