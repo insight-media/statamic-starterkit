@@ -13,6 +13,15 @@
     max-width: 112px;
     height: 19px;
 }
+.global-header .hover\:text-grey-80:hover {
+    color: white !important;
+}
+.site-selector {
+    border-color: #4a5868;
+}
+.vs--single .vs__selected > div {
+    color: white !important;
+}
 .nav-main {
     background-color: #37414f;
     border-right: 0;
