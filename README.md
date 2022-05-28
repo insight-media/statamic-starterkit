@@ -58,6 +58,9 @@ This is a simple Fieldtype for Statamic 3, created to handle links.
 **[Sitemapamic](https://github.com/mitydigital/statamic-sitemapamic)** <br>
 A simple XML sitemap generator for Statamic 3.
 
+**[Statamic Widget: Cache Controller](https://github.com/webographen/statamic-widget-cache-controller)** <br>
+A Cache Controller Widget for Statamic 3.
+
 
 <br>
 <img src="https://www.insight-media.be/images/logo.svg" height="50">
