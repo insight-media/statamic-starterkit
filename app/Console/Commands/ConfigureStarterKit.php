@@ -80,6 +80,11 @@ class ConfigureStarterKit extends Command
             '--provider' => 'Jonassiewertsen\ExternalLink\ServiceProvider'
         ]);
 
+        Artisan::call('vendor:publish', [
+            '--provider' => 'MityDigital\StatamicXmlSitemap\ServiceProvider',
+            '--tag' => 'sitemapamic-config'
+        ]);
+
         $this->info("Published vendor files");
     }
 
