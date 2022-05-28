@@ -39,6 +39,10 @@ return [
 
     'widgets' => [
         'getting_started',
+        [
+            'type' => 'cache_controller',
+            'width' => 50,
+        ]
     ],
 
     /*
