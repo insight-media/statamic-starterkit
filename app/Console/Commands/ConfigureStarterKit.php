@@ -77,10 +77,6 @@ class ConfigureStarterKit extends Command
         ]);
 
         Artisan::call('vendor:publish', [
-            '--provider' => 'Jonassiewertsen\ExternalLink\ServiceProvider'
-        ]);
-
-        Artisan::call('vendor:publish', [
             '--provider' => 'MityDigital\StatamicXmlSitemap\ServiceProvider',
             '--tag' => 'sitemapamic-config'
         ]);
