@@ -55,6 +55,9 @@ Logs all actions by your users in the control panel.
 **[External Link](https://github.com/jonassiewertsen/statamic-external-link)** <br>
 This is a simple Fieldtype for Statamic 3, created to handle links.
 
+**[Sitemapamic](https://github.com/mitydigital/statamic-sitemapamic)** <br>
+A simple XML sitemap generator for Statamic 3.
+
 
 <br>
 <img src="https://www.insight-media.be/images/logo.svg" height="50">
