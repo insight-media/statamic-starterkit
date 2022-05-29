@@ -58,6 +58,9 @@ A simple XML sitemap generator for Statamic 3.
 **[Statamic Widget: Cache Controller](https://github.com/webographen/statamic-widget-cache-controller)** <br>
 A Cache Controller Widget for Statamic 3.
 
+**[External Link Fieldtype](https://github.com/jonassiewertsen/statamic-external-link)** <br>
+This is a simple Fieldtype for Statamic 3, created to handle links.
+
 
 <br>
 <img src="https://www.insight-media.be/images/logo.svg" height="50">
