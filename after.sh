@@ -23,3 +23,8 @@
 #sudo apt-get install -y nodejs
 
 echo "cd /home/vagrant/code" >> /home/vagrant/.bashrc
+
+sudo apt-get install jpegoptim
+sudo apt-get install optipng
+sudo apt-get install pngquant
+sudo apt-get install gifsicle
