@@ -40,6 +40,7 @@ export_paths:
 dependencies_dev:
   deployer/deployer: ^7.0
   laravel/homestead: ^13.2
+  laravel/pint: ^0.2
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
   insight-media/statamic-google-analytics: ^1.0
