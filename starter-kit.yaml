@@ -42,6 +42,7 @@ dependencies_dev:
   laravel/homestead: ^13.2
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
+  insight-media/statamic-google-analytics: ^1.0
   insight-media/statamic-logbook: ^2.1
   insight-media/seotamic: ^2.0
   jonassiewertsen/statamic-external-link: ^1.6

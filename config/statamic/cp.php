@@ -38,7 +38,30 @@ return [
     */
 
     'widgets' => [
-        'getting_started',
+        [
+            'type' => 'analytics',
+            'group' => 'totalVisitorsAndPageViews',
+            'width' => 100,
+            'display' => 'bar'
+        ],
+        [
+            'type' => 'analytics',
+            'group' => 'mostVisitedPages',
+            'width' => 50,
+            'display' => 'table'
+        ],
+        [
+            'type' => 'analytics',
+            'group' => 'topReferrers',
+            'width' => 50,
+            'display' => 'table'
+        ],
+        [
+            'type' => 'analytics',
+            'group' => 'topCountries',
+            'width' => 50,
+            'display' => 'doughnut'
+        ],
         [
             'type' => 'cache_controller',
             'width' => 50,

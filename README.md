@@ -18,9 +18,6 @@ Default media assets.
 ## Globals
 Meta globals.
 
-## Tracking codes
-Default Google Analytics tracking code.
-
 ## Public assets
 For rebranding the control panel.
 Optimised htaccess file.
@@ -39,6 +36,9 @@ Statamic v2 Addon to protect forms using Google's reCAPTCHA service.
 
 **[Logbook](https://github.com/insight-media/statamic-logbook)** <br>
 Statamic v2 Addon to view log files in the CP.
+
+**[Statamic Google Analytics](https://github.com/insight-media/statamic-google-analytics)** <br>
+A Google Analytics 4 addon for Statamic.
 
 **[Seotamic - Statamic SEO Addon](https://github.com/insight-media/seotamic)** <br>
 Automatically adds a SEO tab to all your collection entries where you can fine tune SEO for every entry.
