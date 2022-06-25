@@ -39,10 +39,9 @@ class ConfigureStarterKit extends Command
     public function handle()
     {
 
-        $this->info("Configuring Insight Media Starter Kit");
+        $this->info('Configuring Insight Media Starter Kit');
 
-        if (config('app.env') == "local")
-        {
+        if (config('app.env') == 'local') {
             // Rename .env.example to .env.master
             $this->rename(base_path('.env.example'), base_path('.env.master'));
 
@@ -55,7 +54,7 @@ class ConfigureStarterKit extends Command
 
     private function rename($from, $to)
     {
-        if (!file_exists($to) && file_exists($from)) {
+        if (! file_exists($to) && file_exists($from)) {
             rename($from, $to);
             $this->info("Renamed $from to $to");
         }
@@ -64,29 +63,29 @@ class ConfigureStarterKit extends Command
     private function publishVendorFiles()
     {
         Artisan::call('vendor:publish', [
-            '--tag' => 'statamic-recaptcha'
+            '--tag' => 'statamic-recaptcha',
         ]);
 
         Artisan::call('vendor:publish', [
-            '--provider' => 'AryehRaber\Logbook\LogbookServiceProvider'
+            '--provider' => 'AryehRaber\Logbook\LogbookServiceProvider',
         ]);
 
         Artisan::call('vendor:publish', [
             '--provider' => 'Cnj\Seotamic\ServiceProvider',
-            '--tag' => 'config'
+            '--tag' => 'config',
         ]);
 
         Artisan::call('vendor:publish', [
             '--provider' => 'MityDigital\StatamicXmlSitemap\ServiceProvider',
-            '--tag' => 'sitemapamic-config'
+            '--tag' => 'sitemapamic-config',
         ]);
 
         Artisan::call('vendor:publish', [
             '--provider' => 'InsightMedia\StatamicGoogleAnalytics\ServiceProvider',
-            '--tag' => 'statamic-google-analytics-config'
+            '--tag' => 'statamic-google-analytics-config',
         ]);
 
-        $this->info("Published vendor files");
+        $this->info('Published vendor files');
     }
 
 }
