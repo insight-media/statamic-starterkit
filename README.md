@@ -5,6 +5,9 @@
 Run:<br>
 *statamic new project-name insight-media/statamic-starterkit*
 
+Additional configuration:<br>
+*php artisan insightmedia:configure:starterkit*
+
 
 <br>
 This starterkit contains:
