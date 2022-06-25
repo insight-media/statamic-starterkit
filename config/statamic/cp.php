@@ -39,6 +39,10 @@ return [
 
     'widgets' => [
         [
+            'type' => 'cache_controller',
+            'width' => 100,
+        ],
+        [
             'type' => 'analytics',
             'group' => 'totalVisitorsAndPageViews',
             'width' => 100,
@@ -63,8 +67,10 @@ return [
             'display' => 'doughnut',
         ],
         [
-            'type' => 'cache_controller',
+            'type' => 'analytics',
+            'group' => 'topCountries',
             'width' => 50,
+            'display' => 'table',
         ],
     ],
 
