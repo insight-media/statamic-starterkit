@@ -45,6 +45,9 @@ class ConfigureStarterKit extends Command
             // Rename .env.example to .env.master
             $this->rename(base_path('.env.example'), base_path('.env.master'));
 
+            // Copy .gitignore.stub to .gitignore
+            copy(base_path('.gitignore.stub'), base_path('.gitignore'));
+
             // Publish vendor files
             $this->publishVendorFiles();
         }
