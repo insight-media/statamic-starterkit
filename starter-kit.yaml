@@ -20,6 +20,9 @@ export_paths:
   - Vagrantfile
   - Homestead.yaml
   - workflow.md
+  - vite.config.js
+  - postcss.config.js
+  - package.json
   - public/.htaccess
   - public/images
   - public/css/webwizard

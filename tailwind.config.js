@@ -4,10 +4,13 @@ module.exports = {
         './resources/**/*.antlers.html',
         './resources/**/*.blade.php',
         './resources/**/*.vue',
+        './resources/**/*.yaml',
+        './resources/**/*.css',
+        './resources/**/*.js',
         './content/**/*.md'
     ],
     theme: {
         extend: {},
     },
-    plugins: [],
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 }
