@@ -36,15 +36,46 @@ task('set-origin', function () {
     run('git remote set-url origin '.get('repository'));
 });
 
+desc('Clear cache');
+task('clear-cache', function () {
+    cd('{{release_or_current_path}}');
+    run('php artisan cache:clear');
+    run('php artisan clear-compiled');
+    run('php please stache:clear');
+});
+
+desc('Symlink public folder to new release');
+task('symlink-public', function () {
+    run('rm ~/www');
+    run('ln -s {{release_path}}/public/ ~/www');
+});
+
+desc('Commit and push current branch on remote host to origin repository');
+task('git-commit', function () {
+    cd('{{release_or_current_path}}');
+    run('php please git:commit');
+});
+
 desc('Upload .env.{{current_branch}} to host');
 task('upload-env', function () {
     upload('.env.'.get('current_branch'), get('deploy_path').'/shared/.env');
 });
 
+desc('Configure remote server');
+task('configure-remote', function () {
+    // Copy git binary to user account
+    run('cp -n /bin/git ~/bin/git');
+
+    // Add cronjob
+    run("grep '/please git:commit' /etc/crontab || echo '* * * * * php $HOME/current/please git:commit >/dev/null 2>&1' >> $HOME/.crontab");
+});
+
 desc('Download public storage folder');
 task('download-public-storage', function () {
-    download(get('deploy_path').'/shared/storage/app/public', 'storage/app/public');
+    download(get('deploy_path').'/shared/storage/app/public', 'storage/app');
 });
 
 after('deploy', 'set-origin');
+after('deploy', 'clear-cache');
+after('deploy', 'symlink-public');
 after('deploy:failed', 'deploy:unlock');
