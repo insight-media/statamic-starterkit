@@ -3,6 +3,7 @@ export_paths:
   - tailwind.config.js
   - webpack.mix.js
   - config/app.php
+  - config/cache.php
   - config/services.php
   - config/statamic/assets.php
   - config/statamic/cp.php
@@ -23,6 +24,7 @@ export_paths:
   - vite.config.js
   - postcss.config.js
   - package.json
+  - .gitignore.stub
   - public/.htaccess
   - public/images
   - public/css/webwizard
