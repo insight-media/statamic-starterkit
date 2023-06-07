@@ -79,10 +79,10 @@ class ConfigureStarterKit extends Command
             '--tag' => 'sitemapamic-config',
         ]);
 
-        Artisan::call('vendor:publish', [
+        /*Artisan::call('vendor:publish', [
             '--provider' => 'InsightMedia\StatamicGoogleAnalytics\ServiceProvider',
             '--tag' => 'statamic-google-analytics-config',
-        ]);
+        ]);*/
 
         $this->info('Published vendor files');
     }
