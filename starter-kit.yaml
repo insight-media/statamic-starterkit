@@ -45,6 +45,6 @@ dependencies_dev:
   laravel/pint: ^1.0
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
-  insight-media/statamic-google-analytics: ^2.0
+  insight-media/statamic-google-analytics: ^2.1
   cnj/seotamic: ^4.0
   mitydigital/sitemapamic: ^2.0
