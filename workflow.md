@@ -6,6 +6,7 @@
 * Edit Homestead.yaml
 * Add DNS mapping to host file
 * Run following commands on the host machine:
+  * yarn add @tailwindcss/forms axios lodash postcss-custom-properties postcss-import
   * yarn install
   * php artisan insightmedia:configure:starterkit
   * vagrant up

@@ -63,6 +63,12 @@ task('clear-cache', function () {
     run('php please stache:clear');
 });
 
+desc('Warm stache');
+task('warm-stache', function () {
+    cd('{{release_or_current_path}}');
+    run('php please stache:warm');
+});
+
 desc('Commit and push current branch on remote host to origin repository');
 task('git-commit', function () {
     cd('{{release_or_current_path}}');
@@ -94,4 +100,5 @@ after('deploy', 'build-assets');
 after('deploy', 'symlink-public');
 after('deploy', 'reload-php');
 after('deploy', 'clear-cache');
+after('deploy', 'warm-stache');
 after('deploy:failed', 'deploy:unlock');

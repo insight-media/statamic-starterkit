@@ -1,7 +1,6 @@
 export_paths:
   - .prettierrc
   - tailwind.config.js
-  - webpack.mix.js
   - config/app.php
   - config/cache.php
   - config/services.php
@@ -13,7 +12,6 @@ export_paths:
   - content/globals/meta.yaml
   - content/collections/news.yaml
   - content/seotamic_nl_BE.yaml
-  - content/tracking-codes.yaml
   - .env
   - after.sh
   - aliases
@@ -23,7 +21,6 @@ export_paths:
   - workflow.md
   - vite.config.js
   - postcss.config.js
-  - package.json
   - .gitignore.stub
   - public/.htaccess
   - public/images
@@ -44,16 +41,10 @@ export_paths:
   - app/Console/Commands/ConfigureStarterKit.php
 dependencies_dev:
   deployer/deployer: ^7.0
-  laravel/homestead: ^13.2
-  laravel/pint: ^0.2
+  laravel/homestead: ^14.4
+  laravel/pint: ^1.0
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
-  insight-media/statamic-google-analytics: ^1.0
-  insight-media/statamic-logbook: ^2.1
-  insight-media/seotamic: ^2.0
-  jonassiewertsen/statamic-external-link: ^1.6
+  insight-media/statamic-google-analytics: ^2.0
+  cnj-digital/seotamic: ^4.0
   mitydigital/sitemapamic: ^2.0
-  optimoapps/statamic-bard-text-align: ^1.0
-  simonridley/tracking-code-manager: dev-master
-  webographen/statamic-admin-log: ^1.0
-  webographen/statamic-widget-cache-controller: ^1.0
