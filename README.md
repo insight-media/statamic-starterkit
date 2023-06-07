@@ -40,7 +40,7 @@ Statamic Addon to protect forms using Google's reCAPTCHA service.
 **[Statamic Google Analytics](https://github.com/insight-media/statamic-google-analytics)** <br>
 A Google Analytics 4 addon for Statamic.
 
-**[Seotamic - Statamic SEO Addon](https://github.com/cnj-digital/seotamic)** <br>
+**[Seotamic - Statamic SEO Addon](https://github.com/cnj/seotamic)** <br>
 Automatically adds a SEO tab to all your collection entries where you can fine tune SEO for every entry.
 
 **[Sitemapamic](https://github.com/mitydigital/statamic-sitemapamic)** <br>

@@ -46,5 +46,5 @@ dependencies_dev:
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
   insight-media/statamic-google-analytics: ^2.0
-  cnj-digital/seotamic: ^4.0
+  cnj/seotamic: ^4.0
   mitydigital/sitemapamic: ^2.0

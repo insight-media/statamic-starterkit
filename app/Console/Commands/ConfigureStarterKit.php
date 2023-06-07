@@ -70,10 +70,6 @@ class ConfigureStarterKit extends Command
         ]);
 
         Artisan::call('vendor:publish', [
-            '--provider' => 'AryehRaber\Logbook\LogbookServiceProvider',
-        ]);
-
-        Artisan::call('vendor:publish', [
             '--provider' => 'Cnj\Seotamic\ServiceProvider',
             '--tag' => 'config',
         ]);
