@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="{{ site:short_locale }}" prefix="og: http://ogp.me/ns#">
     <head>
-        <title>{{ seotamic:title }}</title>
+        {{ seo_pro:meta }}
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="{{ seotamic:description }}">
         <meta name="language" content="{{ site:short_locale }}">
         <meta name="csrf_token" content="{{ csrf_token }}">
         <meta name="mobile-web-app-capable" content="yes">
@@ -14,28 +13,24 @@
         <meta name="application-name" content="{{ config:app:name }}">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-TileColor" content="{{ meta:tile_color }}">
-        <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+        <meta name="msapplication-config" content="/browserconfig.xml">
         <meta name="theme-color" content="{{ meta:theme_color }}">
-        {{ seotamic:og }}
-        {{ seotamic:twitter }}
-        <link rel="canonical" href="{{ seotamic:canonical }}">
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
-        <link rel="shortcut icon" href="/images/favicons/favicon.ico">
-        <link rel="manifest" href="/images/favicons/site.webmanifest">
-        <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="{{ meta:safari_tab_color }}">
-        {{ vite src="resources/js/site.js|resources/css/tailwind.css" }}
-        {{ yield:page-specific-stylesheets }}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ meta:safari_tab_color }}">
+        {{ vite src="resources/css/tailwind.css" }}
+        {{ stack:page-specific-stylesheets }}
         {{ ga }}
-        {{ tracking_code_manager:head }}
     </head>
     <body>
-        {{ tracking_code_manager:body }}
         {{ partial:header }}
         {{ template_content }}
         {{ partial:footer }}
-        {{ yield:page-specific-scripts }}
-        {{ tracking_code_manager:footer }}
+
+        {{ vite src="resources/js/site.js" }}
+        {{ stack:page-specific-scripts }}
     </body>
 </html>
