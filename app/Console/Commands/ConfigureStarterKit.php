@@ -43,7 +43,7 @@ class ConfigureStarterKit extends Command
 
         if (config('app.env') == 'local') {
             // Rename .env.example to .env.master
-            $this->rename(base_path('.env.example'), base_path('.env.master'));
+            $this->rename(base_path('.env'), base_path('.env.master'));
 
             // Copy .gitignore.stub to .gitignore
             copy(base_path('.gitignore.stub'), base_path('.gitignore'));
@@ -67,16 +67,6 @@ class ConfigureStarterKit extends Command
     {
         Artisan::call('vendor:publish', [
             '--tag' => 'statamic-recaptcha',
-        ]);
-
-        Artisan::call('vendor:publish', [
-            '--provider' => 'Cnj\Seotamic\ServiceProvider',
-            '--tag' => 'config',
-        ]);
-
-        Artisan::call('vendor:publish', [
-            '--provider' => 'MityDigital\StatamicXmlSitemap\ServiceProvider',
-            '--tag' => 'sitemapamic-config',
         ]);
 
         /*Artisan::call('vendor:publish', [
