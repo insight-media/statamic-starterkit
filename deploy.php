@@ -10,12 +10,13 @@ $repository = 'https://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@github.com/insig
 $host = '';
 $user = '';
 $deployPath = '';
+$branch = trim(implode('/', array_slice(explode('/', file_get_contents('.git/HEAD')), 2)));
 
 set('repository', $repository);
 //set('http_user', $user);
 set('writable_mode', 'chmod');
 set('update_code_strategy', 'clone');
-set('current_branch', trim(implode('/', array_slice(explode('/', file_get_contents('.git/HEAD')), 2))));
+set('current_branch', $branch);
 set('ssh_multiplexing', false);
 
 add('shared_files', []);
@@ -27,7 +28,8 @@ add('writable_dirs', []);
 host($host)
     ->setHostname($host)
     ->setRemoteUser($user)
-    ->setDeployPath($deployPath);
+    ->setDeployPath($deployPath)
+    ->set('branch', $branch);
 
 // Tasks
 
