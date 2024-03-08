@@ -11,7 +11,6 @@ export_paths:
   - content/assets/assets.yaml
   - content/globals/meta.yaml
   - content/collections/news.yaml
-  - content/seotamic_nl_BE.yaml
   - .env
   - after.sh
   - aliases
@@ -31,8 +30,6 @@ export_paths:
   - resources/views/layout.antlers.html
   - resources/views/partials
   - resources/views/errors
-  - resources/lang/nl
-  - resources/lang/nl.json
   - resources/users
   - resources/blueprints/user.yaml
   - resources/blueprints/globals/meta.yaml
@@ -41,9 +38,7 @@ export_paths:
   - app/Console/Commands/ConfigureStarterKit.php
 dependencies_dev:
   deployer/deployer: ^7.0
-  laravel/homestead: ^14.4
+  laravel/homestead: ^14.5
   laravel/pint: ^1.0
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
-  cnj/seotamic: ^4.0
-  mitydigital/sitemapamic: ^2.0

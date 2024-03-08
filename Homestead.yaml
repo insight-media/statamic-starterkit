@@ -7,12 +7,13 @@ keys:
     - ~/.ssh/id_rsa
 folders:
     -
-        map: 'E:\Projects\statamic-starterkit-dummy'
+        map: 'D:\Project\Code'
         to: /home/vagrant/code
 sites:
     -
         map: statamic.local
         to: /home/vagrant/code/public
+        php: "8.3"
 features:
     -
         mysql: false
