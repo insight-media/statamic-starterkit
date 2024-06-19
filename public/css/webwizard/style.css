@@ -1,71 +1,9 @@
-.outside.rad-theme {
-    background-color: #28658f;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-}
 .outside .white-label-logo {
     max-width: 160px;
 }
-.global-header {
-    background-color: #2b3643;
-}
+
 .global-header .white-label-logo {
-    max-height: 19px;
-    max-width: 112px;
-    height: 19px;
-}
-.global-header .hover\:text-grey-80:hover {
-    color: white !important;
-}
-.site-selector {
-    border-color: #4a5868;
-}
-.vs--single .vs__selected > div {
-    color: white !important;
-}
-.nav-main {
-    background-color: #37414f;
-    border-right: 0;
-}
-.nav-main h6 {
-    color: #708096;
-}
-.nav-toggle {
-    color: #697585;
-}
-.nav-toggle:hover {
-    color: #dadcdd;
-    background-color: #4a5868;
-}
-.nav-main li a {
-    color: #b4bcc8;
-}
-.nav-main li a i {
-    color: #708096;
-}
-.nav-main li.current>a {
-    color: #ffffff;
-}
-.nav-main li.current>a i {
-    background-color: #627085;
-    color: #e1e6ed;
-}
-.global-search {
-    border: 0;
-    background-color: #4a5869;
-}
-.global-search .search-input {
-    background-color: transparent;
-    color: white;
-}
-.global-search span {
-    border-color: #8493a1;
-}
-.head-link button {
-    color: #79869a !important;
-}
-.head-link button:hover {
-    color: white !important;
-}
-.icon-user-initials {
-    background-color: #2fadeb;
+    max-height: 24px;
+    max-width: 122px;
+    height: 24px;
 }
