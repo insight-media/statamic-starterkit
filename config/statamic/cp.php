@@ -151,6 +151,8 @@ return [
 
     'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', null),
 
+    'custom_dark_logo_url' => env('STATAMIC_CUSTOM_DARK_LOGO_URL', null),
+
     'custom_favicon_url' => env('STATAMIC_CUSTOM_FAVICON_URL', null),
 
     'custom_css_url' => env('STATAMIC_CUSTOM_CSS_URL', null),
@@ -167,5 +169,4 @@ return [
     'thumbnail_presets' => [
         // 'medium' => 800,
     ],
-
 ];

@@ -16,7 +16,7 @@ sites:
         php: "8.3"
 features:
     -
-        mysql: false
+        mysql: true
     -
         mariadb: false
     -
