@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site:short_locale }}" prefix="og: http://ogp.me/ns#">
+<html lang="{{ site:short_locale }}" prefix="og: http://ogp.me/ns#" class="scroll-smooth">
     <head>
         {{ seo_pro:meta }}
         <meta charset="utf-8">
@@ -12,25 +12,36 @@
         <meta name="apple-touch-fullscreen" content="yes">
         <meta name="application-name" content="{{ config:app:name }}">
         <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-TileColor" content="{{ meta:tile_color }}">
-        <meta name="msapplication-config" content="/browserconfig.xml">
         <meta name="theme-color" content="{{ meta:theme_color }}">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ meta:safari_tab_color }}">
-        {{ vite src="resources/css/tailwind.css" }}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        {{ vite src="resources/css/site.css" }}
+        <link href="https://fonts.googleapis.com/css2?family=..." rel="stylesheet">
+
         {{ stack:page-specific-stylesheets }}
         {{ ga }}
+        {{ captcha:head }}
     </head>
     <body>
+
+    <div class="canvi-navbar xl:!hidden">
+        <nav id="js-canvi-navbar-right">
+            {{ partial:primary-nav }}
+        </nav>
+    </div>
+    <div class="canvi-content min-h-screen bg-white">
         {{ partial:header }}
         {{ template_content }}
         {{ partial:footer }}
+    </div>
 
-        {{ vite src="resources/js/site.js" }}
-        {{ stack:page-specific-scripts }}
+    {{ vite src="resources/js/site.js" }}
+    {{ stack:page-specific-scripts }}
+    {{ recaptcha }}
     </body>
 </html>
