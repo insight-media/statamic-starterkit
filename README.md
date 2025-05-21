@@ -23,7 +23,6 @@ Meta globals.
 
 ## Public assets
 For rebranding the control panel.
-Optimised htaccess file.
 
 ## Resources
 Default layout view.<br>
@@ -40,6 +39,11 @@ Statamic Addon to protect forms using Google's reCAPTCHA service.
 **[Statamic Google Analytics](https://github.com/insight-media/statamic-google-analytics)** <br>
 A Google Analytics 4 addon for Statamic.
 
+**[Statamic SEO Pro](https://github.com/statamic/seo-pro)** <br>
+Official Statamic SEO Pro addon.
+
+**[PHP Deployer](https://github.com/deployer/deployer)** <br>
+Deployer.
 
 <br>
 <img src="https://www.insight-media.be/images/logo.svg" height="50">

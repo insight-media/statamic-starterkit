@@ -43,7 +43,7 @@ class ConfigureStarterKit extends Command
 
         if (config('app.env') == 'local') {
             // Rename .env.example to .env.master
-            $this->rename(base_path('.env'), base_path('.env.master'));
+            $this->rename(base_path('.env'), base_path('.env.main'));
 
             // Copy .gitignore.stub to .gitignore
             copy(base_path('.gitignore.stub'), base_path('.gitignore'));
@@ -69,10 +69,10 @@ class ConfigureStarterKit extends Command
             '--tag' => 'statamic-recaptcha',
         ]);
 
-        /*Artisan::call('vendor:publish', [
+        Artisan::call('vendor:publish', [
             '--provider' => 'InsightMedia\StatamicGoogleAnalytics\ServiceProvider',
             '--tag' => 'statamic-google-analytics-config',
-        ]);*/
+        ]);
 
         $this->info('Published vendor files');
     }

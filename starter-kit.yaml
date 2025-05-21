@@ -1,21 +1,20 @@
 export_paths:
   - .prettierrc
-  - tailwind.config.js
+  - config/auth.php
   - config/cache.php
+  - config/mail.php
+  - config/recaptcha.php
   - config/services.php
+  - config/statamic/assets.php
   - config/statamic/cp.php
+  - config/statamic/users.php
   - content/assets/assets.yaml
   - content/globals/meta.yaml
   - content/collections/news.yaml
   - .env
-  - after.sh
-  - aliases
   - deploy.php
-  - Vagrantfile
-  - Homestead.yaml
   - workflow.md
   - vite.config.js
-  - postcss.config.js
   - .gitignore.stub
   - public/images
   - public/css/webwizard
@@ -31,9 +30,12 @@ export_paths:
   - resources/blueprints/assets/assets.yaml
   - resources/blueprints/collections/news/news.yaml
   - app/Console/Commands/ConfigureStarterKit.php
+  - app/Models/User.php
 dependencies_dev:
   deployer/deployer: ^7.0
-  laravel/homestead: ^15.0
-  laravel/pint: ^1.0
 dependencies:
   anakadote/statamic-recaptcha: ^1.0
+  insight-media/statamic-google-analytics: ^3.0
+  statamic/seo-pro: ^6.7
+  symfony/http-client: ^7.2
+  symfony/mailgun-mailer: ^7.2
