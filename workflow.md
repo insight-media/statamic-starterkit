@@ -3,15 +3,9 @@
 ## Setting up the environment
 
 * File > Rename project
-* Edit Homestead.yaml
-* Add DNS mapping to host file
-* Run following commands on the host machine:
-  * yarn add @tailwindcss/forms axios lodash postcss-custom-properties postcss-import
-  * yarn install
-  * php artisan insightmedia:configure:starterkit
-  * vagrant up
-  * vagrant ssh
 * Edit .env
+* Run: php artisan insightmedia:configure:starterkit
+* Generate favicons using https://realfavicongenerator.net
 
 ## Deployment
 
