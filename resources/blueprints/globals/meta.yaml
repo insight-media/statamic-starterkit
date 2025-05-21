@@ -15,20 +15,6 @@ sections:
           listable: hidden
           instructions_position: above
       -
-        handle: tile_color
-        field:
-          theme: classic
-          lock_opacity: false
-          default_color_mode: HEXA
-          color_modes:
-            - hex
-          display: 'Windows tegel kleur'
-          type: color
-          icon: color
-          instructions: 'Achtergrondkleur van een Windows Tile.'
-          listable: hidden
-          instructions_position: above
-      -
         handle: theme_color
         field:
           theme: classic
@@ -40,19 +26,5 @@ sections:
           type: color
           icon: color
           instructions: 'Thema kleur wanneer de website als webapplicatie wordt geïnstalleerd.'
-          listable: hidden
-          instructions_position: above
-      -
-        handle: safari_tab_color
-        field:
-          theme: classic
-          lock_opacity: false
-          default_color_mode: HEXA
-          color_modes:
-            - hex
-          display: 'Safari vastgepinned tab kleur'
-          type: color
-          icon: color
-          instructions: 'Achtergrondkleur van een vastgepinned tab in Safari.'
           listable: hidden
           instructions_position: above
