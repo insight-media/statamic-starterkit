@@ -97,6 +97,11 @@ task('download-public-storage', function () {
     download(get('deploy_path').'/shared/storage/app/public', 'storage/app');
 });
 
+desc('Upload public storage folder');
+task('upload-public-storage', function () {
+    upload('storage/app', get('deploy_path').'/shared/storage');
+});
+
 after('deploy', 'set-origin');
 after('deploy', 'build-assets');
 after('deploy', 'symlink-public');
