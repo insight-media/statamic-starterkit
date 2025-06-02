@@ -5,6 +5,8 @@
 * File > Rename project
 * Edit .env
 * Run: php artisan insightmedia:configure:starterkit
+* Run: php artisan migrate
+* Run: please eloquent:import-users
 * Generate favicons using https://realfavicongenerator.net
 
 ## Deployment

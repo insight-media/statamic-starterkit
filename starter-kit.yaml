@@ -31,6 +31,7 @@ export_paths:
   - resources/blueprints/collections/news/news.yaml
   - app/Console/Commands/ConfigureStarterKit.php
   - app/Models/User.php
+  - database/migrations/2025_05_20_093745_statamic_auth_tables.php
 dependencies_dev:
   deployer/deployer: ^7.0
 dependencies:
